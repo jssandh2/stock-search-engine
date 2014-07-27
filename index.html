@@ -1,0 +1,64 @@
+<html>
+	<head>
+	    <title>CS410 Project</title>
+	    <meta name="viewport" content="initial-scale=1">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.3.3/platform.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link href="//fonts.googleapis.com/css?family=RobotoDraft:300,400,500|Source+Code+Pro:400,700" rel="stylesheet">
+		<link rel="import" href="components/polymer/polymer.html">
+		  <link rel="import" href="components/core-icons/core-icons.html">
+		  <link rel="import" href="components/core-toolbar/core-toolbar.html">
+		  <link rel="import" href="components/paper-icon-button/paper-icon-button.html">		
+		  <link rel="import" href="components/paper-input/paper-input.html">
+		  <link rel="import" href="components/paper-progress/paper-progress.html">		
+		  <link rel="import" href="components/paper-ripple/paper-ripple.html">	
+		  <link rel="import" href="components/paper-item/paper-item.html">	
+		  <link rel="import" href="components/paper-button/paper-button.html">	
+		  <link rel="import" href="components/core-header-panel/core-header-panel.html">	
+		  
+		  <script type="text/javascript" src="http://yui.yahooapis.com/2.9.0/build/yahoo/yahoo-min.js"></script> 
+		  <style>
+		  	.colored{
+		  		width: 100%;
+		  	}
+		  	body{
+			    margin: 0;
+				font-family: sans-serif;
+				}
+			a { 
+				color: inherit; 
+				text-decoration:none; 
+				} 
+			#loading-image{
+				  margin: auto;
+				  position: absolute;
+				  top: 50%; left: 50%;
+			}
+		  </style>
+		  
+	</head>
+	
+	
+	<body unresolved>
+	<div class = "container">
+		<core-toolbar style="background: #ECECEC;">
+			<core-icon icon="search" on-tap="{{menuAction}}"></core-icon>
+		    <paper-input
+		    	label="Search for a company....." 
+		    	style="width:100%;">
+		    </paper-input>
+  		</core-toolbar>
+	</div>
+	
+	<div id="suggestion">
+		
+	</div>
+	
+	<div id="result">
+		
+	</div>
+	
+	<script src="js/index.js"></script>
+	</body>
+</html>
